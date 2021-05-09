@@ -10,7 +10,7 @@
     "start": "webpack serve --hot",
     "prebuild": "rm -rf /dist",
     "build": "webpack",
-    "copy": "cp ./src/CNAME ./dist/CNAME",
+    
     "ghpages": "gh-pages -d ./dist"
   },
   "devDependencies": {

@@ -26,8 +26,8 @@ jobs:
     - run: npm ci                       # installa le dipendenze (come   npm install ma ottimizzato per i server di CI)
     - run: npm run build                # esegue la build
   
-    - name: GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v2.3.0
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        build_dir: ./dist
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
