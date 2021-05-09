@@ -30,3 +30,4 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v2.3.0
       with:
         build_dir: ./dist
+        github_token: ${{ secrets.GITHUB_TOKEN }}
